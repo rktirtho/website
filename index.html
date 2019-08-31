@@ -19,25 +19,51 @@
 <body>
   <!-- Nav Bar -->
   <div class="container">
-    <nav class="navbar sticky-top navbar-dark">
+    <nav class="navbar sticky-top navbar-light">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link text-light" href="./index.html">Home</a>
-          <a class="nav-link text-light" href="./files/">Files</a>
-          <a class="nav-link text-light" href="./notice/">Notices</a>
-          <a class="nav-link text-light" href="./events/">Events</a>
-          <a class="nav-link text-light" href="./projects/">Projects</a>
-          <a class="nav-link text-light" href="./blogs/">Blogs</a>
-          <a class="nav-link text-light" href="./about/">About</a>
+          <a class="nav-link" href="./index.html">Home</a>
+          <a class="nav-link" href="./files/">Files</a>
+          <a class="nav-link" href="./notice/">Notices</a>
+          <a class="nav-link" href="./events/">Events</a>
+          <a class="nav-link" href="./projects/">Projects</a>
+          <a class="nav-link" href="./blogs/">Blogs</a>
+          <a class="nav-link" href="./about/">About</a>
         </div>
       </div>
-      <a href="https://forms.gle/9LM3M8bgne8kyxME8" target="_blank"><button
-          class="nav-link text-light btn btn-outline-primary">Registration</button></a>
+      <a href="https://forms.gle/9LM3M8bgne8kyxME8" target="_blank" class="nav-link"><button
+          class="btn btn-outline-primary">Registration</button></a>
     </nav>
+  </div>
+
+  <!-- Notice -->
+  <div class="container my-3">
+    <h3 class="notice_title text-center my-2">Recent Notices</h3>
+    <div class="row">
+      <div class="col-md-6 my-2">
+        <div class="card text-center">
+          <div class="card-body background-color">
+            <h5 class="card-title">Registration Began</h5>
+            <p class="card-text">Finally it is started! We are accepting application for being a part of our
+              team members.</p>
+            <a href="https://forms.gle/9LM3M8bgne8kyxME8"><button class="btn button-color btn-primary">Apply
+                Now</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 my-2">
+        <div class="card text-center">
+          <div class="card-body background-color">
+            <h5 class="card-title">Next Meeting</h5>
+            <p class="card-text">The next meeting of admin panel will be held on <span class="next_meeting"></span>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Counter -->
@@ -78,32 +104,73 @@
     </div>
   </div>
 
-  <!-- Notice -->
+  <!-- Events -->
   <div class="container my-3">
-    <h3 class="notice_title text-light text-center my-2">Recent Notices</h3>
+    <h3 class="event_title text-center">Upcoming Events</h3>
     <div class="row">
-      <div class="col-md-6 my-2">
-        <div class="card text-center">
-          <div class="card-body background-color">
-            <h5 class="card-title">Registration Began</h5>
-            <p class="card-text">Finally it is started! We are accepting application for being a part of our
-              team members.</p>
-            <a href="https://forms.gle/9LM3M8bgne8kyxME8"><button class="btn button-color btn-primary">Apply
-                Now</button></a>
-          </div>
-        </div>
+      <div class="col-md-12 my-2">
+        <ul class="list-group list-group-horizontal-xl background-color text-center">
+          <li class="list-group-item flex-fill background-color">
+            <h3>Individual Contest</h3>
+            <p>Aprox. Date: September 15, 2019</p>
+            <a href="#"><button class="btn btn-primary" disabled>Go To Event Page</button></a>
+          </li>
+        </ul>
       </div>
-      <div class="col-md-6 my-2">
-        <div class="card text-center">
-          <div class="card-body background-color">
-            <h5 class="card-title">Next Meeting</h5>
-            <p class="card-text">The next meeting of admin panel will be held on <span class="next_meeting"></span>.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <a href="./admin/"><button class="btn btn-primary">Admin Panel</button></a>
+            <a href="./members/"><button class="btn btn-primary">Members</button></a>
+            <a href="./timeline/"><button class="btn btn-primary">Timeline</button></a>
           </div>
         </div>
       </div>
     </div>
-    <div class="text-center">
-      <a href="./notice/"><button class="btn button-color btn-primary my-3">More Notices →</button></a>
+  </div>
+
+  <!-- Projects -->
+  <div class="container my-3">
+    <h3 class="event_title text-center">Current Projects</h3>
+    <div class="row">
+      <div class="col-md-6 my-2">
+        <div class="card text-center">
+          <div class="card-header h4">DIU Routine Planner</div>
+          <div class="card-body">
+            <p>Routine planner system. To reduce the complexity of making a routine of Dhaka International University.
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/diu-cse-cpc/DIU-Routine-Planner"><button
+                class="btn btn-success contribute float-left">Contribute</button></a>
+            <a href="https://diu-cse-cpc.github.io/DIU-Routine-Planner"><button class="btn btn-primary float-right"
+                disabled>Live
+                Preview</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 my-2">
+        <div class="card text-center">
+          <div class="card-header h4">DIU Library Manager</div>
+          <div class="card-body">
+            <p>Library management system. To reduce the complexity of organizing library of Dhaka International
+              University.
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/diu-cse-cpc/DIU-Library-Manager"><button
+                class="btn btn-success contribute float-left">Contribute</button></a>
+            <a href="https://diu-cse-cpc.github.io/DIU-Library-Manager"><button class="btn btn-primary float-right"
+                disabled>Live
+                Preview</button></a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 

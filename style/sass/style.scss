@@ -1,35 +1,12 @@
 @import './color.scss';
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
 
 body {
-  background-color: $background-color;
-}
-
-.navbar {
-  background-color: $background-color;
-  border-bottom: 1px solid $font-color;
-}
-
-.navbar-toggler {
-  border-color: $font-color !important;
-}
-
-.navbar-toggler-icon {
-  border-color: $font-color !important;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .footer {
   border-top: 1px solid $font-color;
-}
-
-.background-color {
-  background-color: $background-color;
-  color: $font-color;
-}
-
-.button-color {
-  background-color: $button-color;
-  color: $font-color;
-  border: none;
 }
 
 .btn,
@@ -38,7 +15,27 @@ body {
   text-transform: uppercase;
 }
 
+.btn {
+  background-color: $button-color;
+  border: 1px solid $button-color;
+  border-radius: 0px;
+  color: $background-color;
+}
+
 .next_meeting {
   font-weight: 700;
   font-size: 1.6rem;
+}
+
+.contribute {
+  background-color: green;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+h3::first-letter {
+  font-size: 1.7rem;
 }

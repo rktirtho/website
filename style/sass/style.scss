@@ -1,0 +1,44 @@
+@import './color.scss';
+
+body {
+  background-color: $background-color;
+}
+
+.navbar {
+  background-color: $background-color;
+  border-bottom: 1px solid $font-color;
+}
+
+.navbar-toggler {
+  border-color: $font-color !important;
+}
+
+.navbar-toggler-icon {
+  border-color: $font-color !important;
+}
+
+.footer {
+  border-top: 1px solid $font-color;
+}
+
+.background-color {
+  background-color: $background-color;
+  color: $font-color;
+}
+
+.button-color {
+  background-color: $button-color;
+  color: $font-color;
+  border: none;
+}
+
+.btn,
+.card-title {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.next_meeting {
+  font-weight: 700;
+  font-size: 1.6rem;
+}

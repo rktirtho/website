@@ -1,2 +1,1 @@
-# website
-This is the repo of official website of DIU-CSE-CPC.
+# This Website will be live at 6 AM today!
